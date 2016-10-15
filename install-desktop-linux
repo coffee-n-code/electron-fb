@@ -1,0 +1,18 @@
+#!/bin/bash
+
+dir=$(pwd)
+file=/usr/share/applications/messenger.desktop
+
+touch $file
+cat <<EOM >> $file
+[Desktop Entry]
+Version=1.0
+Name=Facebook Messenger
+Comment=A thing to do stuff
+Exec=$dir/run
+Path=$dir
+Icon=$dir/logo.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;Internet;
+EOM

@@ -1,0 +1,16 @@
+{
+	"name": "mojibar",
+	"version": "1",
+	"description": "A linux desktop app adaptation of Emoji searcher.",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/coffee-n-code/electron-fb"
+	},
+	"author": "Graham Robertson <root@graham-robertson.ca>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/coffee-n-code/electron-fb/issues"
+	},
+	"homepage": "https://github.com/coffee-n-code/electron-fb#readme"
+}
