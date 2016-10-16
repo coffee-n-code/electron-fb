@@ -28,6 +28,12 @@ app.on('ready', function() {
 	_window.setMenuBarVisibility(false);
 	_window.loadURL('https://messenger.com');
 	
+	_window.webContents.on('did-finish-load', function() {
+		_window.webContents.executeJavaScript(`
+			document.getElementsByClassName('_s15')[0].style.display = "none";
+		`);
+	});
+	
 	// CLEAN-UP Window
 	_window.on('closed', function() {
 		_window = null;
